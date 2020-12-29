@@ -19,10 +19,11 @@ public class ForecastDisplay implements Observer, DisplayElement {
             WeatherData weatherData = (WeatherData)observable;
             lastPressure = currentPressure;
             currentPressure = weatherData.getPressure();
+            display();
         }
     }
 
     public void display() {
-        display();
+        System.out.println("hahaha~");
     }
 }
